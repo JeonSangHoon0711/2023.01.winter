@@ -1,6 +1,6 @@
 
 public class CafeSeating extends JFrame{
-	int i;
+	int a;
 	int j;
 	public void go() {
 		
