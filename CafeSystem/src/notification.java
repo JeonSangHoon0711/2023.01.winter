@@ -35,3 +35,4 @@ class notification extends JLabel implements Runnable{
 		}
 	}
 }
+
