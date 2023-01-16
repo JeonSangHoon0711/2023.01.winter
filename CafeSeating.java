@@ -4,12 +4,12 @@ import javax.swing.ImageIcon;
 
 public class CafeSeating {
 	JFrame jframe = new JFrame("peoplenumberlabelasd");
-	PeopleNumberLabel peoplenumberlabel = new PeopleNumberLabel();
-	PeopleNumberTextField peoplenumbertextfield = new PeopleNumberTextField();
-	ResidualSeatsLabel residualseatslabel = new ResidualSeatsLabel();
-	Inbutton inbutton = new Inbutton();
-	Outbutton outbutton = new Outbutton();
-	backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
+	public static PeopleNumberLabel peoplenumberlabel = new PeopleNumberLabel();
+	public static PeopleNumberTextField peoplenumbertextfield = new PeopleNumberTextField();
+	public static ResidualSeatsLabel residualseatslabel = new ResidualSeatsLabel();
+	public static Inbutton inbutton = new Inbutton();
+	public static Outbutton outbutton = new Outbutton();
+	public static backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
 
 	public CafeSeating() {
 
