@@ -6,19 +6,19 @@ class inListener implements ActionListener{
 	int seats, customer;
 
 	public void actionPerformed(ActionEvent e) {
-		//seats = Integer.parseInt(frame.seatLabel.getText());
-		//customer = Integer.parseInt(frame.txtf.getText());
-		//frame.txtf.setText("");
+		seats = Integer.parseInt(frame.seatLabel.getText());
+		customer = Integer.parseInt(frame.txtf.getText());
+		frame.txtf.setText("");
 		
 		if(seats-customer <= 0) {
-			//frame.noti.setText("ÀÜ¿©ÁÂ¼®ÀÌ ¾ø½À´Ï´Ù.");
-			//frame.noti.On = true;
+			frame.noti.setText("ìž”ì—¬ì¢Œì„ì´ ì—†ìŠµë‹ˆë‹¤.");
+			frame.noti.On = true;
 		}
 		else {
-			//frame.noti.setText("È¯¿µÇÕ´Ï´Ù.");
-			//frame.noti.On = true;
+			frame.noti.setText("í™˜ì˜í•©ë‹ˆë‹¤.");
+			frame.noti.On = true;
 			seats -= customer;
-			//frame.seatLabel.setText(seats+"");
+			frame.seatLabel.setText(seats+"");
 		}
 	}
 }
