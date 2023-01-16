@@ -9,7 +9,7 @@ class notification extends JLabel implements Runnable{
 	
 	public notification(String str) {
 		Th = new Thread(this, "notification");
-		X = x; Y = y; Width = w; Height = h;
+		X = 0; Y = 0; Width = 10; Height = 10;
 		On = false;
 		setText(str);
 		setHorizontalAlignment(JLabel.CENTER);
