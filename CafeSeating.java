@@ -8,6 +8,7 @@ public class CafeSeating {
 	ResidualSeatsLabel dddd = new ResidualSeatsLabel();
 	Inbutton inbutton = new Inbutton();
 	Outbutton outbutton = new Outbutton();
+	
 	public CafeSeating() {
 
 		jframe.setLayout(null);
@@ -16,8 +17,10 @@ public class CafeSeating {
 		jframe.add(asdf.getPeopleNumberLabel());
 		jframe.add(ffff.getPeoplenumbertextfield());
 		jframe.add(dddd.getResidualseatslabel());
+		
 		jframe.add(inbutton.getInbutton());
 		jframe.add(outbutton.getOutbutton());
+		
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}

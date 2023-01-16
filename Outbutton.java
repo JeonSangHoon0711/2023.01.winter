@@ -2,7 +2,6 @@ import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JButton;
-import javax.swing.text.AttributeSet.ColorAttribute;
 
 public class Outbutton {
   JButton outbutton = new JButton("입장하기");
