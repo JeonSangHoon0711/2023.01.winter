@@ -5,13 +5,15 @@ class outListener implements ActionListener{
 	int seats, customer;
 
 	public void actionPerformed(ActionEvent e) {
-		seats = Integer.parseInt(frame.seatLabel.getText());
-		customer = Integer.parseInt(frame.txtf.getText());
-		frame.txtf.setText("");
+		seats = CafeSeating.residualseatslabel.getResidualseats();
+		customer = Integer.parseInt(CafeSeating.peoplenumbertextfield.gettext());
+		CafeSeating.peoplenumbertextfield.settext("");
 		
-		frame.noti.setText("감사합니다.");
-		frame.noti.On = true;
-		seats += customer;
-		frame.seatLabel.setText(seats+"");
+		if(seats > customer){
+			CafeSeating.noti.setText("감사합니다.");
+			CafeSeating.noti.On = true;
+			seats += customer;
+			CafeSeating.residualseatslabel.setResidualseats(seats);
+		}
 	}
 }
