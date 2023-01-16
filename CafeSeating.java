@@ -25,5 +25,5 @@ public class CafeSeating {
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
-
+sdaf
 }
