@@ -3,6 +3,7 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
 public class CafeSeating {
+
 	JFrame jframe = new JFrame("peoplenumberlabelasd");
 	PeopleNumberLabel peoplenumberlabel = new PeopleNumberLabel();
 	PeopleNumberTextField peoplenumbertextfield = new PeopleNumberTextField();
@@ -10,6 +11,7 @@ public class CafeSeating {
 	Inbutton inbutton = new Inbutton();
 	Outbutton outbutton = new Outbutton();
 	backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
+
 
 	public CafeSeating() {
 
@@ -22,6 +24,7 @@ public class CafeSeating {
 		bgp.add(residualseatslabel.getResidualseatslabel());
 		bgp.add(inbutton.getInbutton());
 		bgp.add(outbutton.getOutbutton());
+
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
