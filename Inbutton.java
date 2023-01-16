@@ -10,6 +10,7 @@ public class Inbutton {
 		inbutton.setBackground(Color.blue);
     inbutton.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		inbutton.setBounds(490,10,90,20);
+    inbutton.addActionListener(new inListener());
   }
   public JButton getInbutton(){
     return inbutton;

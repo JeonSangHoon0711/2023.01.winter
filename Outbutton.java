@@ -10,6 +10,7 @@ public class Outbutton {
 		outbutton.setBackground(Color.blue);
     outbutton.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		outbutton.setBounds(490,30,90,20);
+    outbutton.addActionListener(new outListener());
   }
   public JButton getOutbutton(){
     return outbutton;
