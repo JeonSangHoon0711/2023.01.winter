@@ -6,7 +6,8 @@ public class CafeSeating {
 	PeopleNumberLabel asdf = new PeopleNumberLabel();
 	PeopleNumberTextField ffff = new PeopleNumberTextField();
 	ResidualSeatsLabel dddd = new ResidualSeatsLabel();
-
+	Inbutton inbutton = new Inbutton();
+	Outbutton outbutton = new Outbutton();
 	public CafeSeating() {
 
 		jframe.setLayout(null);
@@ -15,13 +16,14 @@ public class CafeSeating {
 		jframe.add(asdf.getPeopleNumberLabel());
 		jframe.add(ffff.getPeoplenumbertextfield());
 		jframe.add(dddd.getResidualseatslabel());
+		jframe.add(inbutton.getInbutton());
+		jframe.add(outbutton.getOutbutton());
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
 
 	public void go() {
 		while (true) {
-			System.out.println("12");
 			dddd.getResidualseatslabel().setText("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "
 					+ dddd.getResidualseats() + "<body></html>");
 			dddd.setResidualseats(dddd.getResidualseats() + 1);
