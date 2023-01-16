@@ -4,13 +4,12 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 class notification extends JLabel implements Runnable{
-	Thread Th; boolean On;
+	Thread Th; boolean On = false;
 	int X, Y, Width, Height;
 	
 	public notification(String str) {
 		Th = new Thread(this, "notification");
 		X = 0; Y = 0; Width = 10; Height = 10;
-		On = false;
 		setText(str);
 		setHorizontalAlignment(JLabel.CENTER);
 		setBackground(Color.WHITE);
