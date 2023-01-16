@@ -4,12 +4,13 @@ import javax.swing.ImageIcon;
 
 public class CafeSeating {
 	JFrame jframe = new JFrame("asdfasdfasd");
-	PeopleNumberLabel asdf = new PeopleNumberLabel();
-	PeopleNumberTextField ffff = new PeopleNumberTextField();
-	ResidualSeatsLabel dddd = new ResidualSeatsLabel();
+	public static PeopleNumberLabel asdf = new PeopleNumberLabel();
+	public static PeopleNumberTextField ffff = new PeopleNumberTextField();
+	public static ResidualSeatsLabel dddd = new ResidualSeatsLabel();
 	Inbutton inbutton = new Inbutton();
 	Outbutton outbutton = new Outbutton();
 	backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
+	public static notification noti = new notification("");
 
 	public CafeSeating() {
 
@@ -22,6 +23,7 @@ public class CafeSeating {
 		bgp.add(dddd.getResidualseatslabel());
 		bgp.add(inbutton.getInbutton());
 		bgp.add(outbutton.getOutbutton());
+		bgp.add(noti);
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
