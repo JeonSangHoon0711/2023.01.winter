@@ -1,6 +1,7 @@
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-class outListener {
+class outListener implements ActionListener{
 	int seats, customer;
 
 	public void actionPerformed(ActionEvent e) {
