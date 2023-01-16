@@ -1,4 +1,5 @@
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
@@ -17,6 +18,7 @@ public class CafeSeating {
 		jframe.setLayout(null);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 		jframe.setSize(640, 480);
+
 		jframe.add(bgp);
 		bgp.add(asdf.getPeopleNumberLabel());
 		bgp.add(ffff.getPeoplenumbertextfield());

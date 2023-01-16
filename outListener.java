@@ -1,16 +1,17 @@
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-class outListener {
+class outListener implements ActionListener{
 	int seats, customer;
 
 	public void actionPerformed(ActionEvent e) {
-		//seats = Integer.parseInt(frame.seatLabel.getText());
-		//customer = Integer.parseInt(frame.txtf.getText());
-		//frame.txtf.setText("");
+		seats = Integer.parseInt(frame.seatLabel.getText());
+		customer = Integer.parseInt(frame.txtf.getText());
+		frame.txtf.setText("");
 		
-		//frame.noti.setText("ÀÜ¿©ÁÂ¼®ÀÌ ¾ø½À´Ï´Ù.");
-		//frame.noti.On = true;
+		frame.noti.setText("ê°ì‚¬í•©ë‹ˆë‹¤.");
+		frame.noti.On = true;
 		seats += customer;
-		//frame.seatLabel.setText(seats+"");
+		frame.seatLabel.setText(seats+"");
 	}
 }

@@ -6,6 +6,7 @@ class inListener implements ActionListener{
 	int seats, customer;
 
 	public void actionPerformed(ActionEvent e) {
+
 		seats = Integer.parseInt(CafeSeating.dddd.getText());
 		customer = Integer.parseInt(CafeSeating.ffff.getText());
 		CafeSeating.ffff.settext("");

@@ -9,12 +9,12 @@ class notification extends JLabel implements Runnable{
 	
 	public notification(String str) {
 		Th = new Thread(this, "notification");
-		//X = x; Y = y; Width = w; Height = h;
+		X = x; Y = y; Width = w; Height = h;
 		On = false;
 		setText(str);
 		setHorizontalAlignment(JLabel.CENTER);
 		setBackground(Color.WHITE);
-		setFont(new Font("±¼¸²",Font.BOLD,18));
+		setFont(new Font("Â±Â¼Â¸Â²",Font.BOLD,18));
 		setOpaque(true);
 		setBounds(X, Y, Width, Height);
 		Th.start();
@@ -35,4 +35,3 @@ class notification extends JLabel implements Runnable{
 		}
 	}
 }
-
