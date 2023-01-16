@@ -3,10 +3,10 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
 public class CafeSeating {
-	JFrame jframe = new JFrame("asdfasdfasd");
-	PeopleNumberLabel asdf = new PeopleNumberLabel();
-	PeopleNumberTextField ffff = new PeopleNumberTextField();
-	ResidualSeatsLabel dddd = new ResidualSeatsLabel();
+	JFrame jframe = new JFrame("peoplenumberlabelasd");
+	PeopleNumberLabel peoplenumberlabel = new PeopleNumberLabel();
+	PeopleNumberTextField peoplenumbertextfield = new PeopleNumberTextField();
+	ResidualSeatsLabel residualseatslabel = new ResidualSeatsLabel();
 	Inbutton inbutton = new Inbutton();
 	Outbutton outbutton = new Outbutton();
 	backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
@@ -17,9 +17,9 @@ public class CafeSeating {
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 		jframe.setSize(640, 480);
 		jframe.add(bgp);
-		bgp.add(asdf.getPeopleNumberLabel());
-		bgp.add(ffff.getPeoplenumbertextfield());
-		bgp.add(dddd.getResidualseatslabel());
+		bgp.add(peoplenumberlabel.getPeopleNumberLabel());
+		bgp.add(peoplenumbertextfield.getPeoplenumbertextfield());
+		bgp.add(residualseatslabel.getResidualseatslabel());
 		bgp.add(inbutton.getInbutton());
 		bgp.add(outbutton.getOutbutton());
 		jframe.setVisible(true);
