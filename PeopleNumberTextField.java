@@ -1,4 +1,3 @@
-package testest;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -12,8 +11,9 @@ public class PeopleNumberTextField {
 		
 		peoplenumbertextfield.setHorizontalAlignment(JLabel.CENTER);
 		peoplenumbertextfield.setBackground(Color.pink);
-		peoplenumbertextfield.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 15));
+		peoplenumbertextfield.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 15));
 		peoplenumbertextfield.setBounds(460,10,40,30);
+		
 	}
 	public JTextField getPeoplenumbertextfield() {
 		return peoplenumbertextfield;

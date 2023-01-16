@@ -1,4 +1,3 @@
-package testest;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -6,13 +5,14 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 public class PeopleNumberLabel {
-	JLabel peoplenumberlabel = new JLabel("<html><body style = 'text-align:center;'>ÀÎ¿ø¼ö¸¦<br>ÀÔ·ÂÇÏ¼¼¿ä<body></html>");
+	JLabel peoplenumberlabel = new JLabel("<html><body style = 'text-align:center;'>ì¸ì›ìˆ˜ë¥¼<br>ì…ë ¥í•˜ì„¸ìš”<body></html>");
 	
 	public PeopleNumberLabel() {
+		
 		peoplenumberlabel.setOpaque(true);
 		peoplenumberlabel.setHorizontalAlignment(JLabel.CENTER);
 		peoplenumberlabel.setBackground(Color.pink);
-		peoplenumberlabel.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 12));
+		peoplenumberlabel.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 12));
 		peoplenumberlabel.setBounds(350,10,100,40);
 	}
 

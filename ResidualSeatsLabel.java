@@ -1,4 +1,3 @@
-package testest;
 
 import java.awt.Font;
 
@@ -6,10 +5,10 @@ import javax.swing.JLabel;
 
 public class ResidualSeatsLabel {
 	int residualseats = 0;
-	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center;'>ÀÜ¿© ÁÂ¼® ¼ö <br> "+ residualseats + "<body></html>");
+	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center;'>ì”ì—¬ ì¢Œì„ ìˆ˜ <br> "+ residualseats + "<body></html>");
 	public ResidualSeatsLabel() {
 		residualseatslabel.setBounds(210, 190, 300, 250);
-		residualseatslabel.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 25));
+		residualseatslabel.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 25));
 		
 		
 	}
