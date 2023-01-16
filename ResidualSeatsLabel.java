@@ -4,7 +4,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 public class ResidualSeatsLabel {
-	static int residualseats = 0;
+	static int residualseats = 30;
 	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "+ residualseats + "<body></html>");
 	public ResidualSeatsLabel() {
 		residualseatslabel.setBounds(210, 190, 300, 250);

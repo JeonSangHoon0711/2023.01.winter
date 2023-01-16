@@ -11,6 +11,7 @@ public class CafeSeating {
 	public static Inbutton inbutton = new Inbutton();
 	public static Outbutton outbutton = new Outbutton();
 	public static backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
+	public static notification noti = new notification("");
 
 	public CafeSeating() {
 
@@ -23,6 +24,7 @@ public class CafeSeating {
 		bgp.add(residualseatslabel.getResidualseatslabel());
 		bgp.add(inbutton.getInbutton());
 		bgp.add(outbutton.getOutbutton());
+		bgp.add(noti);
 
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
