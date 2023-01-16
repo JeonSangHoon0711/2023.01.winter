@@ -3,6 +3,7 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
 public class CafeSeating {
+
 	JFrame jframe = new JFrame("peoplenumberlabelasd");
 	public static PeopleNumberLabel peoplenumberlabel = new PeopleNumberLabel();
 	public static PeopleNumberTextField peoplenumbertextfield = new PeopleNumberTextField();
@@ -22,6 +23,7 @@ public class CafeSeating {
 		bgp.add(residualseatslabel.getResidualseatslabel());
 		bgp.add(inbutton.getInbutton());
 		bgp.add(outbutton.getOutbutton());
+
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
