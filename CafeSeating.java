@@ -1,5 +1,6 @@
 
 import javax.swing.JFrame;
+import javax.swing.ImageIcon;
 
 public class CafeSeating {
 	JFrame jframe = new JFrame("asdfasdfasd");
@@ -8,32 +9,21 @@ public class CafeSeating {
 	ResidualSeatsLabel dddd = new ResidualSeatsLabel();
 	Inbutton inbutton = new Inbutton();
 	Outbutton outbutton = new Outbutton();
+	backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
+
 	public CafeSeating() {
 
 		jframe.setLayout(null);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 		jframe.setSize(640, 480);
-		jframe.add(asdf.getPeopleNumberLabel());
-		jframe.add(ffff.getPeoplenumbertextfield());
-		jframe.add(dddd.getResidualseatslabel());
-		jframe.add(inbutton.getInbutton());
-		jframe.add(outbutton.getOutbutton());
+		jframe.add(bgp);
+		bgp.add(asdf.getPeopleNumberLabel());
+		bgp.add(ffff.getPeoplenumbertextfield());
+		bgp.add(dddd.getResidualseatslabel());
+		bgp.add(inbutton.getInbutton());
+		bgp.add(outbutton.getOutbutton());
 		jframe.setVisible(true);
 		jframe.setDefaultCloseOperation(jframe.EXIT_ON_CLOSE);
 	}
 
-	public void go() {
-		while (true) {
-			dddd.getResidualseatslabel().setText("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "
-					+ dddd.getResidualseats() + "<body></html>");
-			dddd.setResidualseats(dddd.getResidualseats() + 1);
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			jframe.repaint();
-		}
-	}
 }
