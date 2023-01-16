@@ -10,7 +10,7 @@ public class CafeSeating {
 	public static Inbutton inbutton = new Inbutton();
 	public static Outbutton outbutton = new Outbutton();
 	public static backgroundPanel bgp = new backgroundPanel(new ImageIcon("background.png").getImage());
-
+//a
 	public CafeSeating() {
 
 		jframe.setLayout(null);
