@@ -18,5 +18,11 @@ public class PeopleNumberTextField {
 	public JTextField getPeoplenumbertextfield() {
 		return peoplenumbertextfield;
 	}
+	public String gettext (){
+		return peoplenumbertextfield.getText();
+	}
+	public void settext (String text){
+		peoplenumbertextfield.setText(text);
+	}
 
 }
