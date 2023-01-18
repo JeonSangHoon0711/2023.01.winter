@@ -1,15 +1,18 @@
-package testest;
 
+import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JLabel;
 
 public class ResidualSeatsLabel {
-	int residualseats = 0;
-	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center;'>ÀÜ¿© ÁÂ¼® ¼ö <br> "+ residualseats + "<body></html>");
+	static int residualseats = 30;
+	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>ì”ì—¬ ì¢Œì„ ìˆ˜</div>"+ residualseats + "<body></html>");
 	public ResidualSeatsLabel() {
-		residualseatslabel.setBounds(210, 190, 300, 250);
-		residualseatslabel.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 25));
+		residualseatslabel.setHorizontalAlignment(JLabel.CENTER);
+		residualseatslabel.setBounds(235, 300, 170, 100);
+		residualseatslabel.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 25));
+		residualseatslabel.setOpaque(true);
+		residualseatslabel.setBackground(Color.pink);
 		
 		
 	}
