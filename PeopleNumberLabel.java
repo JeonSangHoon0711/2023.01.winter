@@ -11,7 +11,8 @@ public class PeopleNumberLabel {
 		
 		peoplenumberlabel.setOpaque(true);
 		peoplenumberlabel.setHorizontalAlignment(JLabel.CENTER);
-		peoplenumberlabel.setBackground(Color.pink);
+		peoplenumberlabel.setBackground(new Color(124, 190, 249));
+		peoplenumberlabel.setForeground(Color.WHITE);
 		peoplenumberlabel.setFont(new Font("맑은 고딕", Font.BOLD, 12));
 		peoplenumberlabel.setBounds(290,20,100,45);
 	}
