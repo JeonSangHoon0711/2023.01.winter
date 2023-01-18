@@ -6,13 +6,13 @@ import javax.swing.JLabel;
 
 public class ResidualSeatsLabel {
 	static int residualseats = 30;
-	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>잔여 좌석 수</div>"+ residualseats + "<body></html>");
+	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center; font-size:50px'><div style = font-size:15px>잔여 좌석 수</div>"+ residualseats + "<body></html>");
 	public ResidualSeatsLabel() {
 		residualseatslabel.setHorizontalAlignment(JLabel.CENTER);
-		residualseatslabel.setBounds(235, 300, 170, 100);
+		residualseatslabel.setBounds(220, 280, 200, 120);
 		residualseatslabel.setFont(new Font("맑은 고딕", Font.BOLD, 25));
-		residualseatslabel.setOpaque(true);
-		residualseatslabel.setBackground(Color.pink);
+		residualseatslabel.setOpaque(false);
+		//residualseatslabel.setBackground(Color.pink);
 		
 		
 	}

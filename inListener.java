@@ -19,7 +19,7 @@ class inListener implements ActionListener{
 			CafeSeating.noti.On = true;
 			seats -= customer;
 			CafeSeating.residualseatslabel.setResidualseats(seats);
-			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>잔여 좌석 수</div>"+ seats + "<body></html>");
+			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center; font-size:50px'><div style = font-size:15px>잔여 좌석 수</div>"+ seats + "<body></html>");
 		}
 	}
 }
