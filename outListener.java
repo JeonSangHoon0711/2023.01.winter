@@ -9,7 +9,7 @@ class outListener implements ActionListener{
 		customer = Integer.parseInt(CafeSeating.peoplenumbertextfield.gettext());
 		CafeSeating.peoplenumbertextfield.settext("");
 		
-		if(customer+seats<50){
+		if(customer+seats<=50){
 
 			CafeSeating.noti.setText("감사합니다.");
 			CafeSeating.noti.On = true;
