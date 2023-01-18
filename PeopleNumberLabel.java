@@ -13,7 +13,7 @@ public class PeopleNumberLabel {
 		peoplenumberlabel.setHorizontalAlignment(JLabel.CENTER);
 		peoplenumberlabel.setBackground(Color.pink);
 		peoplenumberlabel.setFont(new Font("맑은 고딕", Font.BOLD, 12));
-		peoplenumberlabel.setBounds(350,10,100,40);
+		peoplenumberlabel.setBounds(290,20,100,45);
 	}
 
 	public JLabel getPeopleNumberLabel() {

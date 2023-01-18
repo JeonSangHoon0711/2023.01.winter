@@ -12,7 +12,7 @@ public class PeopleNumberTextField {
 		peoplenumbertextfield.setHorizontalAlignment(JLabel.CENTER);
 		peoplenumbertextfield.setBackground(Color.pink);
 		peoplenumbertextfield.setFont(new Font("맑은 고딕", Font.BOLD, 15));
-		peoplenumbertextfield.setBounds(460,10,40,30);
+		peoplenumbertextfield.setBounds(390,20,90,45);
 		
 	}
 	public JTextField getPeoplenumbertextfield() {

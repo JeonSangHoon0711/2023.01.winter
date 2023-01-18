@@ -9,13 +9,13 @@ class outListener implements ActionListener{
 		customer = Integer.parseInt(CafeSeating.peoplenumbertextfield.gettext());
 		CafeSeating.peoplenumbertextfield.settext("");
 		
-		if(customer+seats<50){
+		if(customer+seats<=50){
 
-			CafeSeating.noti.setText("감사합니다.");
+			CafeSeating.noti.setText("이용해 주셔서 감사합니다.");
 			CafeSeating.noti.On = true;
 			seats += customer;
 			CafeSeating.residualseatslabel.setResidualseats(seats);
-			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "+ seats + "<body></html>");
+			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>잔여 좌석 수</div>"+ seats + "<body></html>");
 
 
 
