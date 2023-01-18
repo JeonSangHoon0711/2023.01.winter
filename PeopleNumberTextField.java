@@ -13,6 +13,7 @@ public class PeopleNumberTextField {
 		peoplenumbertextfield.setBackground(Color.pink);
 		peoplenumbertextfield.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		peoplenumbertextfield.setBounds(390,20,90,45);
+		peoplenumbertextfield.setBorder(null);
 		
 	}
 	public JTextField getPeoplenumbertextfield() {
