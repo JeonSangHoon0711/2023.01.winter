@@ -10,7 +10,7 @@ class inListener implements ActionListener{
 		customer = Integer.parseInt(CafeSeating.peoplenumbertextfield.gettext());
 		CafeSeating.peoplenumbertextfield.settext("");
 
-		if(seats-customer <= 0) {
+		if(seats-customer < 0) {
 			CafeSeating.noti.setText("좌석이 없습니다.");
 			CafeSeating.noti.On = true;
 		}
