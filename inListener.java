@@ -11,7 +11,7 @@ class inListener implements ActionListener{
 		CafeSeating.peoplenumbertextfield.settext("");
 
 		if(seats-customer < 0) {
-			CafeSeating.noti.setText("좌석이 없습니다.");
+			CafeSeating.noti.setText("잔여좌석이 없습니다.");
 			CafeSeating.noti.On = true;
 		}
 		else {
@@ -19,7 +19,7 @@ class inListener implements ActionListener{
 			CafeSeating.noti.On = true;
 			seats -= customer;
 			CafeSeating.residualseatslabel.setResidualseats(seats);
-			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "+ seats + "<body></html>");
+			CafeSeating.residualseatslabel.residualseatslabel.setText("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>잔여 좌석 수</div>"+ seats + "<body></html>");
 		}
 	}
 }
