@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 
 public class ResidualSeatsLabel {
 	static int residualseats = 30;
-	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center;'>잔여 좌석 수 <br> "+ residualseats + "<body></html>");
+	JLabel residualseatslabel = new JLabel("<html><body style = 'text-align:center; font-size:30px'><div style = font-size:12px>잔여 좌석 수</div>"+ residualseats + "<body></html>");
 	public ResidualSeatsLabel() {
 		residualseatslabel.setHorizontalAlignment(JLabel.CENTER);
 		residualseatslabel.setBounds(235, 300, 170, 100);
